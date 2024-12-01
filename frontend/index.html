@@ -1,0 +1,518 @@
+
+<!DOCTYPE html>
+<html lang="en">
+ <head>
+  <meta charset="utf-8"/>
+  <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+  <title>
+   Virtuagro
+  </title>
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet"/>
+  <script src="https://cdn.tailwindcss.com">
+  </script>
+  <script src="https://cdn.jsdelivr.net/npm/chart.js">
+  </script>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&amp;display=swap" rel="stylesheet"/>
+  <style>
+   .hover-effect:hover {
+            transform: scale(1.05);
+            transition: transform 0.3s;
+        }
+        html {
+    scroll-behavior: smooth;
+}
+  </style>
+ </head>
+ <body class="font-roboto bg-gray-100">
+ <!-- Hero Wrap Section -->
+<header class="bg-green-600 text-white py-6">
+    <div class="container mx-auto flex justify-between items-center">
+        <h1 class="text-3xl font-bold">
+            VIRTUAGRO
+        </h1>
+        <nav class="hidden md:flex space-x-6">
+            <a class="hover:underline" href="#home">Home</a>
+            <a class="hover:underline" href="#about">About</a>
+            <a class="hover:underline" href="#services">Service</a>
+            <a class="hover:underline" href="#features">Features</a>
+        </nav>
+        <div class="space-x-4">
+            <button class="bg-white text-green-600 px-4 py-2 rounded hover-effect" onclick="window.location.href='registrationform.html'">
+                Get Started
+            </button>
+            <button class="bg-white text-green-600 px-4 py-2 rounded hover-effect" onclick="location.href='#content'">
+                Learn More
+            </button>
+        </div>
+        <div class="md:hidden">
+            <i class="fas fa-bars text-2xl"></i>
+        </div>
+    </div>
+</header>
+  <!-- Hero Section -->
+  <section id="home" class="bg-white py-12">
+   <div class="container mx-auto flex flex-col md:flex-row items-center">
+    <div class="md:w-1/2 md:pr-8">
+     <h2 class="text-4xl font-bold mb-4">
+      Empowering Smart Agriculture through Virtuagro
+     </h2>
+     <p class="mb-6">
+      Unlock the potential of your farm with seamless data integration, real-time insights, and innovative analytics to optimize productivity.
+     </p>
+     <button class="bg-green-600 text-white px-6 py-3 rounded hover-effect">
+      Get Started
+     </button>
+    </div>
+    <div class="md:w-1/2 mt-6 md:mt-0">
+     <img alt="A futuristic farm with advanced technology and machinery" class="hover-effect" height="400" src="https://storage.googleapis.com/a1aa/image/DkG19AZFCSpvI1USPIVZR3OWpkpOMX51kAQeYd01Kp3ArO7JA.jpg" width="600"/>
+    </div>
+   </div>
+  </section>
+  <!-- Features Wrap Section -->
+  <section id="features" class="bg-gray-200 py-12">
+   <div class="container mx-auto text-center">
+    <h2 class="text-3xl font-bold mb-8">
+     Our Features
+    </h2>
+    <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+     <div class="bg-white p-6 rounded shadow hover-effect">
+      <div class="text-green-600 text-4xl mb-4">
+       <i class="fas fa-network-wired">
+       </i>
+      </div>
+      <h3 class="text-xl font-bold mb-2">
+       Diverse Data Connectivity
+      </h3>
+      <p>
+       Connect seamlessly across agricultural systems.
+      </p>
+     </div>
+     <div class="bg-white p-6 rounded shadow hover-effect">
+      <div class="text-green-600 text-4xl mb-4">
+       <i class="fas fa-brain">
+       </i>
+      </div>
+      <h3 class="text-xl font-bold mb-2">
+       AI-Driven Insights Generation
+      </h3>
+      <p>
+       Personalized insights drive farm success.
+      </p>
+     </div>
+     <div class="bg-white p-6 rounded shadow hover-effect">
+      <div class="text-green-600 text-4xl mb-4">
+       <i class="fas fa-chart-line">
+       </i>
+      </div>
+      <h3 class="text-xl font-bold mb-2">
+       Predictive Data Analytics
+      </h3>
+      <p>
+       Forecast trends and mitigate risks.
+      </p>
+     </div>
+    </div>
+   </div>
+  </section>
+  <!-- About Wrap Section -->
+  <section id="about" class="bg-white py-12">
+   <div class="container mx-auto flex flex-col md:flex-row items-center">
+    <div class="md:w-1/2 md:pr-8">
+     <img alt="Farmers using advanced technology in the field" class="hover-effect" height="400" src="https://storage.googleapis.com/a1aa/image/tBaGHPjDwA5CD1sPqFrdtT7thbrj706Jc5Sff206knXDWd2TA.jpg" width="600"/>
+    </div>
+    <div class="md:w-1/2 mt-6 md:mt-0">
+     <h2 class="text-3xl font-bold mb-4">
+      Partnering in Agricultural Innovation
+     </h2>
+     <p>
+      At Virtuagro, we revolutionize agriculture with real-time insights from various data sources. Our advanced data analysis, aided by AI and machine learning, ensures personalized recommendations and predictive insights. We prioritize data security and user interface design to empower farmers globally, fostering sustainable agriculture practices.
+     </p>
+    </div>
+   </div>
+  </section>
+  <!-- Service Wrap Section -->
+  <section id="services" class="bg-gray-200 py-12">
+   <div class="container mx-auto text-center">
+    <h2 class="text-3xl font-bold mb-8">
+     Our Services
+    </h2>
+    <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+     <div class="bg-white p-6 rounded shadow hover-effect">
+      <div class="flex items-center mb-4">
+       <span class="text-green-600 text-2xl font-bold mr-4">
+        01
+       </span>
+       <div>
+        <h3 class="text-xl font-bold">
+         Data Integration
+        </h3>
+        <p>
+         Seamlessly integrate data from beehives, dairy farms, and various IoT devices, ensuring you have all necessary insights at your fingertips.
+        </p>
+       </div>
+      </div>
+      <img alt="Data integration from various agricultural sources" class="hover-effect" height="400" src="https://storage.googleapis.com/a1aa/image/MTHJa1wPoEKLGluMOVA8YNhDfkyohveKNYFfqaMzsKNar6snA.jpg" width="600"/>
+     </div>
+     <div class="bg-white p-6 rounded shadow hover-effect">
+      <div class="flex items-center mb-4">
+       <span class="text-green-600 text-2xl font-bold mr-4">
+        02
+       </span>
+       <div>
+        <h3 class="text-xl font-bold">
+         Visualize Monitor
+        </h3>
+        <p>
+         Transform data into compelling charts.
+        </p>
+       </div>
+      </div>
+      <img alt="Data visualization charts and graphs" class="hover-effect" height="400" src="https://storage.googleapis.com/a1aa/image/WFNKbWgAboqPCNMe2LjgDDU4Iwd1XT8u8scWVAHKJGw8qO7JA.jpg" width="600"/>
+     </div>
+     <div class="bg-white p-6 rounded shadow hover-effect">
+      <div class="flex items-center mb-4">
+       <span class="text-green-600 text-2xl font-bold mr-4">
+        03
+       </span>
+       <div>
+        <h3 class="text-xl font-bold">
+         Generate Insights
+        </h3>
+        <p>
+         Personalize analytics for optimal farm efficiency.
+        </p>
+       </div>
+      </div>
+      <img alt="Generating insights for farm efficiency" class="hover-effect" height="400" src="https://storage.googleapis.com/a1aa/image/1lBBYCZ6gRrwKNxsQDGQ5brJaQcuhlcY7jy8JkZIwj1fqO7JA.jpg" width="600"/>
+     </div>
+     <div class="bg-white p-6 rounded shadow hover-effect">
+      <div class="flex items-center mb-4">
+       <span class="text-green-600 text-2xl font-bold mr-4">
+        04
+       </span>
+       <div>
+        <h3 class="text-xl font-bold">
+         Utilizing AI and ML
+        </h3>
+        <p>
+         Leveraging AI to detect issues early, improve decision making, and ensure seamless farming operations.
+        </p>
+       </div>
+      </div>
+      <img alt="AI and ML in agriculture" class="hover-effect" height="400" src="https://storage.googleapis.com/a1aa/image/bXGoKx9PJpKHJ11aLS8ESV4USIisKFQGVw57m2s6wOybVn9E.jpg" width="600"/>
+     </div>
+    </div>
+   </div>
+  </section>
+  <!-- Content Wrap Section -->
+  <section id="content" class="bg-white py-12">
+   <div class="container mx-auto flex flex-col md:flex-row items-center">
+    <div class="md:w-1/2 md:pr-8">
+     <img alt="Predictive analytics in agriculture" class="hover-effect" height="400" src="https://storage.googleapis.com/a1aa/image/pgY5OfAKbO09Dq5tA1KzfpcqR0brxtY5kTxtbBK0gUg0Vd2TA.jpg" width="600"/>
+    </div>
+    <div class="md:w-1/2 mt-6 md:mt-0">
+     <h2 class="text-3xl font-bold mb-4">
+      Highlighting Predictive Analytics Benefits
+     </h2>
+     <p>
+      With Virtuagro, anticipate agricultural trends and mitigate potential risks through sophisticated predictive analytics and personalized recommendations.
+     </p>
+     <div class="flex space-x-8 mt-4">
+      <div>
+       <h3 class="text-2xl font-bold">
+        300+
+       </h3>
+       <p>
+        Integrated systems connected
+       </p>
+      </div>
+      <div>
+       <h3 class="text-2xl font-bold">
+        7
+       </h3>
+       <p>
+        IoT devices
+       </p>
+      </div>
+     </div>
+     <button class="bg-green-600 text-white px-6 py-3 rounded mt-4 hover-effect" onclick="window.location.href='registrationform.html'">
+      Explore now
+     </button>
+    </div>
+   </div>
+  </section>
+  <!-- Testimonial Wrap Section -->
+  <section class="bg-gray-200 py-12">
+   <div class="container mx-auto text-center">
+    <h2 class="text-3xl font-bold mb-8">
+     User Reviews
+    </h2>
+    <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+     <div class="bg-white p-6 rounded shadow hover-effect">
+      <p class="mb-4">
+       Virtuagro transformed our farms productivity by integrating data seamlessly, providing insightful analytics and securing our data.
+      </p>
+      <div class="flex items-center">
+       <img alt="Portrait of Samuel Greene" class="rounded-full mr-4" height="50" src="https://storage.googleapis.com/a1aa/image/BMmbBO2LHqZXHNa0MJGlfqtq9rXHO9PmyEe3MVKhZYvCWd2TA.jpg" width="50"/>
+       <div>
+        <h4 class="font-bold">
+         Samuel Greene
+        </h4>
+        <p>
+         Farm Owner
+        </p>
+       </div>
+      </div>
+     </div>
+     <div class="bg-white p-6 rounded shadow hover-effect">
+      <p class="mb-4">
+       The AI insights boosted our farms efficiency immensely.
+      </p>
+      <div class="flex items-center">
+       <img alt="Portrait of Anne Rose" class="rounded-full mr-4" height="50" src="https://storage.googleapis.com/a1aa/image/fjsHJitNJ9XgFqRfU6PkdDEyPHfH8IjufA6hwoeSr4EsvqzeE.jpg" width="50"/>
+       <div>
+        <h4 class="font-bold">
+         Anne Rose
+        </h4>
+        <p>
+         Expert
+        </p>
+       </div>
+      </div>
+     </div>
+     <div class="bg-white p-6 rounded shadow hover-effect">
+      <p class="mb-4">
+       The predictive analytics helped us forecast better, reducing risks significantly and improving overall output drastically.
+      </p>
+      <div class="flex items-center">
+       <img alt="Portrait of Linda Yang" class="rounded-full mr-4" height="50" src="https://storage.googleapis.com/a1aa/image/lzqmlM2Qw5aHPRubOCZA5jELZnQxeaEjIWh2OQlYQ0h7qO7JA.jpg" width="50"/>
+       <div>
+        <h4 class="font-bold">
+         Linda Yang
+        </h4>
+        <p>
+         Farmer
+        </p>
+       </div>
+      </div>
+     </div>
+    </div>
+   </div>
+  </section>
+  <!-- Blog Section -->
+  <section class="bg-white py-12">
+   <div class="container mx-auto text-center">
+    <h2 class="text-3xl font-bold mb-8">
+     Expert Insights
+    </h2>
+    <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+     <div class="bg-white p-6 rounded shadow hover-effect">
+      <img alt="Blog post about unleashing the power of agricultural data" class="mb-4" height="400" src="https://storage.googleapis.com/a1aa/image/JQ3sH797Uk4VBNINF1VIvBWfRBZm8fAcKit1wZ8GNmM7Vd2TA.jpg" width="600"/>
+      <div class="flex justify-between text-gray-600 mb-2">
+       <span>
+        Jan 10, 2024
+       </span>
+       <span>
+        Announcement
+       </span>
+      </div>
+      <h3 class="text-xl font-bold">
+       Unleashing the power of agricultural data
+      </h3>
+     </div>
+     <div class="bg-white p-6 rounded shadow hover-effect">
+      <img alt="Blog post about data visualization techniques for farmers" class="mb-4" height="400" src="https://storage.googleapis.com/a1aa/image/EPhYR9rvWc5HPBj5ffGdjy2JWm2pmgyYLUFOQCsM8e7hr6snA.jpg" width="600"/>
+      <div class="flex justify-between text-gray-600 mb-2">
+       <span>
+        Jan 13, 2024
+       </span>
+       <span>
+        Tutorials
+       </span>
+      </div>
+      <h3 class="text-xl font-bold">
+       Data visualization techniques for farmers
+      </h3>
+     </div>
+     <div class="bg-white p-6 rounded shadow hover-effect">
+      <img alt="Blog post about predictive analytics in modern farming" class="mb-4" height="400" src="https://storage.googleapis.com/a1aa/image/V9LddTTWimI7JJw3Jrp076wDGGupuS5Pune5AmSvNMP8qO7JA.jpg" width="600"/>
+      <div class="flex justify-between text-gray-600 mb-2">
+       <span>
+        Feb 13, 2024
+       </span>
+       <span>
+        Informative
+       </span>
+      </div>
+      <h3 class="text-xl font-bold">
+       Predictive Analytics in Modern Farming
+      </h3>
+     </div>
+     <div class="bg-white p-6 rounded shadow hover-effect">
+      <img alt="Blog post about innovative IoT solutions in agriculture" class="mb-4" height="400" src="https://storage.googleapis.com/a1aa/image/PCPSZxI1WKrAJBRxWOkfekucBnCmP5fivoWAyuLyYtNkr6snA.jpg" width="600"/>
+      <div class="flex justify-between text-gray-600 mb-2">
+       <span>
+        Mar 13, 2024
+       </span>
+       <span>
+        Informative
+       </span>
+      </div>
+      <h3 class="text-xl font-bold">
+       Innovative IoT solutions in Agriculture
+      </h3>
+     </div>
+     <div class="bg-white p-6 rounded shadow hover-effect">
+      <img alt="Blog post about ensuring data privacy in agriculture" class="mb-4" height="400" src="https://storage.googleapis.com/a1aa/image/CPFUBS5qXSr1KJYk6pBdD76x7oPvsiXN57QzgCzw2PMfqO7JA.jpg" width="600"/>
+      <div class="flex justify-between text-gray-600 mb-2">
+       <span>
+        Feb 24, 2024
+       </span>
+       <span>
+        Announcement
+       </span>
+      </div>
+      <h3 class="text-xl font-bold">
+       Ensuring data privacy in agriculture
+      </h3>
+     </div>
+    </div>
+   </div>
+  </section>
+  <!-- Map and Contact Section -->
+<!-- Map and Contact Section -->
+<section class="bg-gray-200 py-12">
+    <div class="container mx-auto flex flex-col md:flex-row items-start">
+        <div class="md:w-1/2 md:pr-8">
+            <iframe 
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d255282.35869034982!2d36.682580485329446!3d-1.3028602818078252!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x182f1172d84d49a7%3A0xf7cf0254b297924c!2sNairobi!5e0!3m2!1sen!2ske!4v1733053756673!5m2!1sen!2ske" 
+                width="500" 
+                height="450" 
+                style="border:0;" 
+                allowfullscreen="" 
+                loading="lazy" 
+                referrerpolicy="no-referrer-when-downgrade">
+            </iframe>
+        </div>
+        <div class="md:w-1/2 mt-6 md:mt-0">
+            <h2 class="text-3xl font-bold mb-4">Contact Us</h2>
+            <p class="mb-6">Our friendly team would love to hear from you</p>
+            <form id="contactForm" onsubmit="handleSubmit(event)">
+                <div class="mb-4">
+                    <label class="block text-gray-700" for="firstname">First Name</label>
+                    <input class="w-full px-4 py-2 border rounded" id="firstname" name="firstname" required type="text"/>
+                </div>
+                <div class="mb-4">
+                    <label class="block text-gray-700" for="email">Email</label>
+                    <input class="w-full px-4 py-2 border rounded" id="email" name="email" required type="email"/>
+                </div>
+                <div class="mb-4">
+                    <label class="block text-gray-700" for="message">Message</label>
+                    <textarea class="w-full px-4 py-2 border rounded" id="message" name="message" required></textarea>
+                </div>
+                <div class="mb-4">
+                    <input class="mr-2" id="terms" name="terms" required type="checkbox"/>
+                    <label class="text-gray-700" for="terms">
+                        I accept the <a href="terms-and-conditions.html" target="_blank" class="text-blue-500 underline">Terms and Conditions</a>
+                    </label>
+                </div>
+                <button class="bg-green-600 text-white px-6 py-3 rounded hover-effect" type="submit">Submit</button>
+            </form>
+            <div id="notification" class="hidden mt-4 bg-green-500 text-white p-4 rounded">
+                Your message has been submitted successfully!
+            </div>
+        </div>
+    </div>
+</section>
+
+<script>
+function handleSubmit(event) {
+    event.preventDefault(); // Prevent the default form submission
+    // Show the notification
+    const notification = document.getElementById('notification');
+    notification.classList.remove('hidden');
+    
+    // Optionally, you can reset the form fields
+    document.getElementById('contactForm').reset();
+    
+    // Hide the notification after a few seconds (optional)
+    setTimeout(() => {
+        notification.classList.add('hidden');
+    }, 5000); // Hide after 5 seconds
+}
+</script>
+  <!-- Footer Section -->
+  <footer class="bg-green-600 text-white py-12">
+    <div class="container mx-auto grid grid-cols-1 md:grid-cols-3 gap-8">
+        <div>
+            <h2 class="text-2xl font-bold mb-4">Virtuagro</h2>
+            <p class="mb-4">Virtuagro is a cutting-edge agriculture technology firm offering real-time insights through data integration from diverse agricultural systems, empowering farmers with personalized recommendations and predictive analysis.</p>
+            <div class="flex">
+                <input id="subscribeEmail" class="w-full px-4 py-2 rounded-l" placeholder="Your Email" type="email"/>
+                <button class="bg-white text-green-600 px-4 py-2 rounded-r">Subscribe</button>
+            </div>
+            <div id="subscribeNotification" class="hidden mt-4 bg-green-500 text-white p-4 rounded">
+                You have subscribed successfully!
+            </div>
+            <div id="alreadySubscribedNotification" class="hidden mt-4 bg-red-500 text-white p-4 rounded">
+                You are already subscribed with this email!
+            </div>
+        </div>
+        <div>
+            <h3 class="text-xl font-bold mb-4">Company</h3>
+            <ul>
+                <li class="mb-2"><a class="hover:underline" href="#">Home</a></li>
+                <li class="mb-2"><a class="hover:underline" href="#">Service</a></li>
+                <li class="mb-2"><a class="hover:underline" href="#">Contact</a></li>
+            </ul>
+            <h3 class="text-xl font-bold mb-4 mt-8">Resources</h3>
+            <ul>
+                <li class="mb-2"><a class="hover:underline" href="#">Quick Links</a></li>
+                <li class="mb-2"><a class="hover:underline" href="#">Testimonial</a></li>
+                <li class="mb-2"><a class="hover:underline" href="#">Features</a></li>
+            </ul>
+        </div>
+        <div>
+            <h3 class="text-xl font-bold mb-4">Contact Info</h3>
+            <p class="mb-4">123 Green Street</p>
+            <div class="flex mb-2">
+                <i class="fas fa-phone-alt mr-2"></i> <!-- Phone Icon -->
+                <span>+25400000000</span>
+            </div>
+            <div class="flex mb-2">
+                <i class="fas fa-envelope mr-2"></i> <!-- Email Icon -->
+                <span>support@virtuagro.com</span>
+            </div>
+        </div>
+    </div>
+    <div class="text-center text-sm mt-8">
+        <p>Copyright 2024, All rights reserved</p>
+    </div>
+</footer>
+<script>
+    // Array to hold subscribed emails
+    const subscribedEmails = [];
+
+    function subscribe() {
+        const emailInput = document.getElementById('subscribeEmail');
+        const email = emailInput.value.trim();
+        const subscribeNotification = document.getElementById('subscribeNotification');
+        const alreadySubscribedNotification = document.getElementById('alreadySubscribedNotification');
+
+        // Clear previous notifications
+        subscribeNotification.classList.add('hidden');
+        alreadySubscribedNotification.classList.add('hidden');
+
+        // Check if email is already subscribed
+        if (subscribedEmails.includes(email)) {
+            alreadySubscribedNotification.classList.remove('hidden');
+        } else {
+            // Add email to the subscribed list
+            subscribedEmails.push(email);
+            subscribeNotification.classList.remove('hidden');
+            emailInput.value = ''; // Clear the input field
+        }
+    }
+</script>
+ </body>
+</html>
